@@ -25,8 +25,9 @@ const TableDate = ({book,fetchDataAgaib}) => {
       }
       const dispatch = useDispatch();
 
-     const clearIssuedBookqq =(bookId)=>{
-        dispatch(issuedReqDeletedByAdmin(bookId))
+     const clearIssuedBookqq =(bookId,issueId)=>{
+        const key=true;
+        dispatch(issuedReqDeletedByAdmin(bookId,issueId,key))
         fetchDataAgaib()
      }
 
@@ -51,7 +52,7 @@ const TableDate = ({book,fetchDataAgaib}) => {
              {/* <i className='fa fa-trash m-1' onClick={()=> console.log("okk")}></i>
               <button onClick={() => console.log("")} className="btn btn-success">Renew</button> 
               <button onClick={() => console.log("ok")} className="btn btn-danger ">Return </button> */}
-             <button onClick={() =>  clearIssuedBookqq(book._id)} className="btn btn-danger">Clear</button>
+             <button onClick={() =>  clearIssuedBookqq(book._id,book.bookId)} className="btn btn-danger">Clear</button>
         </td>
 
     </tr>

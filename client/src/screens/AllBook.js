@@ -71,7 +71,7 @@ const AllBook = () => {
     return (
         <div>
                <div className="col-md-10 m-auto" >
-                  <h3 className='text-center bg-info p-2' style={{fontFamily:"sans-serif",}}>All AVAILABLE BOOk IN LIBARY</h3>
+                  <h3 className='text-center bg-info p-2' style={{fontFamily:"sans-serif",}}>All AVAILABLE BOOKS IN LIBARY</h3>
                   <br />
                   <Toast onClose={() => setShow(false)} show={show} delay={3000} autohide>
                  <Toast.Body style={{backgroundColor:"green",color:"white",fontSize:"18px"}}>You successfully send issue request for {bootTitle}  </Toast.Body>

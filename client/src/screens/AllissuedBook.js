@@ -19,6 +19,8 @@ const AllIssuedBook = () => {
     const fetchDataAgaib = ()=>{
         dispatch(getAllIssuedBook())
     }
+    console.log("all issuued book page");
+    console.log(all_IssuedBook);
   
  
 
@@ -49,8 +51,12 @@ const AllIssuedBook = () => {
 <tbody>
     
 {all_IssuedBook && all_IssuedBook.map(book=>{
+    if(book.isRecom==true){
+        return <TableDate key={book._id} book={book} fetchDataAgaib={fetchDataAgaib} />
+
+    }
      
-     return <TableDate key={book._id} book={book} fetchDataAgaib={fetchDataAgaib} />
+     
 
 })}
 

@@ -18,9 +18,9 @@ const UserIssuedBook = () => {
       
     const {userIssuedBook} = useSelector(state => state.userIssuedBookReducer)
     const {singleIsBook} = useSelector(state => state.singleIssuedBookReducer)
-     
+     console.log(userIssuedBook);
     const issuedBook = userIssuedBook && userIssuedBook.filter(item => item.isIssue);
-   
+    
     const callantherFunction = (postId)=>{
         dispatch(singleissueABook(postId))
     }
@@ -48,8 +48,8 @@ var days = duration.asDays();
 dayDiff = days
       
   }
-  
- 
+  console.log("jfnvfj");
+ console.log(issuedBook);
  
     return (
         <div className="col-md-10 m-auto pt-4">

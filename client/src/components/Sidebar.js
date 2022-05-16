@@ -34,14 +34,14 @@ const Sidebar = () => {
                        <li> <i className="fas fa-registered text-white"></i> 
                        <Link  to="/dashboard/stuReqIssue"   style={{textDecoration:"none",color:"#f1f1f1",fontSize:"20px",marginLeft:"5px",fontFamily:"Oswald"}}> Issue Request </Link>  </li>
                        <hr style={{color:"white"}} />
-                       <li> <i className="fas fa-book text-white"></i> <Link  to="/dashboard/Recommandation"  
-                        style={{textDecoration:"none",color:"#f1f1f1",fontSize:"20px",marginLeft:"5px",fontFamily:"Oswald"}}> Book Recommandation </Link>  </li>
-                       <hr style={{color:"white"}} />
+                       {/* <li> <i className="fas fa-book text-white"></i> <Link  to="/dashboard/Recommandation"  
+                        style={{textDecoration:"none",color:"#f1f1f1",fontSize:"20px",marginLeft:"5px",fontFamily:"Oswald"}}> Book Recommendation </Link>  </li> */}
+                       {/* <hr style={{color:"white"}} /> */}
                        <li> <i className="fas fa-book text-white"></i> <Link  to="/dashboard/allissuedBook" 
-                         style={{textDecoration:"none",color:"#f1f1f1",fontSize:"20px",marginLeft:"5px",fontFamily:"Oswald"}}> All Issued Book </Link>  </li>
+                         style={{textDecoration:"none",color:"#f1f1f1",fontSize:"20px",marginLeft:"5px",fontFamily:"Oswald"}}> All Returned Books </Link>  </li>
                        <hr style={{color:"white"}} />
                        <li> <i className="fas fa-book text-white"></i> <Link  to="/dashboard/issue_return" 
-                         style={{textDecoration:"none",color:"#f1f1f1",fontSize:"20px",marginLeft:"5px",fontFamily:"Oswald"}}> Today Issue/Return Book </Link>  </li>
+                         style={{textDecoration:"none",color:"#f1f1f1",fontSize:"20px",marginLeft:"5px",fontFamily:"Oswald"}}> Total Issue/Return Books </Link>  </li>
                        <hr style={{color:"white"}} />
                        <li> <i className="fas fa-users text-white"></i> <Link  to="/dashboard/addEmployee" 
                          style={{textDecoration:"none",color:"#f1f1f1",fontSize:"20px",marginLeft:"5px",fontFamily:"Oswald"}}> Add Employee </Link>  </li>
@@ -53,9 +53,9 @@ const Sidebar = () => {
                     {/* <li> <i className="fas fa-users"></i> 
                     <Link  to="/dashboard/manageStudent"   style={{textDecoration:"none",color:"#f1f1f1",fontSize:"20px",marginLeft:"5px"}}> Borrowed Book</Link>  </li> */}
                     {/* <hr style={{color:"white"}} /> */}
-                    <li> <i className="fas fa-registered text-white"></i> 
-                    <Link  to="/dashboard/RecomBook"   style={{textDecoration:"none",color:"#f1f1f1",fontSize:"20px",marginLeft:"5px",fontFamily:"Oswald"}}> Recommended Book </Link>  </li>
-                    <hr style={{color:"white"}} />
+                    {/* <li> <i className="fas fa-registered text-white"></i> 
+                    <Link  to="/dashboard/RecomBook"   style={{textDecoration:"none",color:"#f1f1f1",fontSize:"20px",marginLeft:"5px",fontFamily:"Oswald"}}> Recommended Book </Link>  </li> */}
+                    {/* <hr style={{color:"white"}} /> */}
                     <li> <i className="fas fa-book text-white"></i> <Link  to="/dashboard/issuedBook" 
                       style={{textDecoration:"none",color:"#f1f1f1",fontSize:"20px",marginLeft:"5px",fontFamily:"Oswald"}}> Curently issued Book</Link>  </li>
                     <hr style={{color:"white"}} />
